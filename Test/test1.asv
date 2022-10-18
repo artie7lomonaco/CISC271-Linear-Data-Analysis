@@ -1,0 +1,33 @@
+% A = load('19al63.txt');
+% 
+% lraw = eig(A);
+% 
+% lvec = round(lraw);
+% 
+% c = max(lraw);
+% 
+% [Emat,lraw] = eig(A,"vector")
+% 
+% idx = find(lvec==60);
+% 
+% evec1 = Emat(:,idx)
+% 
+% W = round(evec1)
+
+%first part
+A1 = [1 5 ; 0 1];
+[U1,S1,V1] = svd(A1);
+
+A2 = [1 -1 ; -1 1]
+[U2,S2,V2] = svd(A2)
+
+%second part
+A3 = [1 -1 ; -1 1 ; 2 0]
+[U3,S3,V3] = svd(A3)
+
+
+A3 = [1 -1 2 ; -1 1 ; 2 0]
+[U3,S3,V3] = svd(A3)
+
+
+
